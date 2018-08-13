@@ -21,6 +21,7 @@
 	"dependencies": {
 		"@gribnoysup/wunderbar": "^2.2.1",
 		"@noderize/runtime": "^0.7.5",
-		"chalk": "^2.4.1"
+		"chalk": "^2.4.1",
+		"randomcolor": "^0.5.3"
 	}
 }
