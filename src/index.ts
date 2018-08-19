@@ -1,34 +1,34 @@
-import Bar from './bar'
-const randomColor = require('randomcolor')
+import Bar from "./bar";
+const randomColor = require("randomcolor");
 
 const printViz = res => {
-  const tracing = res.extensions.tracing
+  const tracing = res.extensions.tracing;
 
   if (!tracing) {
-    console.log('No trace data')
-    return
+    console.log("No trace data");
+    return;
   }
-  const { duration: total } = tracing
+  const { duration: total } = tracing;
 
-  const bar = new Bar({ total })
+  const bar = new Bar({ total });
 
   const {
-    execution: { resolvers },
-  } = tracing
+    execution: { resolvers }
+  } = tracing;
 
   // draw total
   bar.draw({
     duration: total,
     startOffset: 0,
-    path: ['total'],
-    color: randomColor(),
-  })
+    path: ["total"],
+    color: randomColor()
+  });
 
   // draw all resolvers
-  resolvers.map(r => bar.draw({ ...r, color: randomColor() }))
+  resolvers.map(r => bar.draw({ ...r, color: randomColor() }));
 
-  return res
-}
+  return res;
+};
 
-module.exports = printViz
-export default printViz
+module.exports = printViz;
+export default printViz;

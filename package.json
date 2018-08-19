@@ -1,26 +1,26 @@
 {
-	"name": "apollo-trace-viz",
-	"version": "0.1.0",
-	"private": true,
-	"main": "dist/index.js",
-	"scripts": {
-		"watch": "noderize-scripts watch",
-		"build": "noderize-scripts build",
-		"start": "noderize-scripts start",
-		"format": "noderize-scripts format",
-		"test": "noderize-scripts test",
-		"lint": "noderize-scripts lint",
-		"clean": "noderize-scripts clean"
-	},
-	"noderize": {
-		"languages": "typescript"
-	},
-	"devDependencies": {
-		"@noderize/scripts": "^0.7.5"
-	},
-	"dependencies": {
-		"@noderize/runtime": "^0.7.5",
-		"chalk": "^2.4.1",
-		"randomcolor": "^0.5.3"
-	}
+  "name": "apollo-trace-viz",
+  "version": "0.1.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "watch": "noderize-scripts watch",
+    "build": "noderize-scripts build",
+    "start": "noderize-scripts start",
+    "format": "noderize-scripts format",
+    "test": "noderize-scripts test",
+    "lint": "noderize-scripts lint",
+    "clean": "noderize-scripts clean",
+    "prepack": "noderize-scripts clean && noderize-scripts build --env production"
+  },
+  "noderize": {
+    "languages": "typescript"
+  },
+  "devDependencies": {
+    "@noderize/scripts": "^0.7.5"
+  },
+  "dependencies": {
+    "@noderize/runtime": "^0.7.5",
+    "chalk": "^2.4.1",
+    "randomcolor": "^0.5.3"
+  }
 }

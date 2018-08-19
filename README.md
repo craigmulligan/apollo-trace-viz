@@ -8,7 +8,7 @@ Ensure your graphql server is returning valid [apollo-trace](https://github.com/
 
 And it'll print a visualization of your response. After drawing the visuals to the console it returns the response so you can chain it with other promise handlers.
 
-![screenshot](./screen-shot.png)
+![screenshot](https://github.com/hobochild/apollo-trace-viz/blob/master/screen-shot.png)
 
 ## Example
 
