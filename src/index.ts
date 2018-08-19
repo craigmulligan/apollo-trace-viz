@@ -1,28 +1,34 @@
-const { bgWhite } = require('chalk')
-// const data = require('./data.json')
-const data = require('../data.json')
 import Bar from './bar'
 const randomColor = require('randomcolor')
 
-const getTotal = ({ extensions }) => {
-  const { duration } = extensions.tracing
+const printViz = res => {
+  const tracing = res.extensions.tracing
 
-  return duration
-}
+  if (!tracing) {
+    console.log('No trace data')
+    return
+  }
+  const { duration: total } = tracing
 
-const printData = () => {
-  process.stdout.cursorTo(0)
-  const total = getTotal(data)
   const bar = new Bar({ total })
-  const tracing = data.extensions.tracing
 
   const {
     execution: { resolvers },
   } = tracing
 
-  bar.draw({ duration: total, startOffset: 0, path: ['total'], color: randomColor() })
+  // draw total
+  bar.draw({
+    duration: total,
+    startOffset: 0,
+    path: ['total'],
+    color: randomColor(),
+  })
 
-  resolvers.map(r => bar.draw({...r, color:  randomColor()}))
+  // draw all resolvers
+  resolvers.map(r => bar.draw({ ...r, color: randomColor() }))
+
+  return res
 }
 
-printData()
+module.exports = printViz
+export default printViz

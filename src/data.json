@@ -1,83 +1,219 @@
 {
-  "data": {
-    "hero": {
-      "name": "R2-D2",
-      "friends": [
-        {
-          "name": "Luke Skywalker"
-        },
-        {
-          "name": "Han Solo"
-        },
-        {
-          "name": "Leia Organa"
-        }
-      ]
-    }
-  },
   "extensions": {
     "tracing": {
       "version": 1,
-      "startTime": "2017-07-28T14:20:32.106Z",
-      "endTime": "2017-07-28T14:20:32.109Z",
-      "duration": 2694443,
-      "parsing": {
-        "startOffset": 34953,
-        "duration": 351736
-      },
-      "validation": {
-        "startOffset": 412349,
-        "duration": 670107
-      },
+      "startTime": "2018-08-13T21:14:06.921Z",
+      "endTime": "2018-08-13T21:14:06.922Z",
+      "duration": 507296,
       "execution": {
         "resolvers": [
           {
-            "path": ["hero"],
+            "path": ["allUsers"],
             "parentType": "Query",
-            "fieldName": "hero",
-            "returnType": "Character",
-            "startOffset": 1172456,
-            "duration": 215657
+            "fieldName": "allUsers",
+            "returnType": "[User]",
+            "startOffset": 21163,
+            "duration": 289293
           },
           {
-            "path": ["hero", "name"],
-            "parentType": "Droid",
-            "fieldName": "name",
-            "returnType": "String!",
-            "startOffset": 1903307,
-            "duration": 73098
+            "path": ["allUsers", 0, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 324518,
+            "duration": 4082
           },
           {
-            "path": ["hero", "friends"],
-            "parentType": "Droid",
-            "fieldName": "friends",
-            "returnType": "[Character]",
-            "startOffset": 1992644,
-            "duration": 522178
+            "path": ["allUsers", 1, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 337540,
+            "duration": 1370
           },
           {
-            "path": ["hero", "friends", 0, "name"],
-            "parentType": "Human",
-            "fieldName": "name",
-            "returnType": "String!",
-            "startOffset": 2445097,
-            "duration": 18902
+            "path": ["allUsers", 2, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 342174,
+            "duration": 3355
           },
           {
-            "path": ["hero", "friends", 1, "name"],
-            "parentType": "Human",
-            "fieldName": "name",
-            "returnType": "String!",
-            "startOffset": 2488750,
-            "duration": 2141
+            "path": ["allUsers", 3, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 348340,
+            "duration": 1025
           },
           {
-            "path": ["hero", "friends", 2, "name"],
-            "parentType": "Human",
-            "fieldName": "name",
-            "returnType": "String!",
-            "startOffset": 2501461,
-            "duration": 1657
+            "path": ["allUsers", 4, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 355686,
+            "duration": 1247
+          },
+          {
+            "path": ["allUsers", 5, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 369660,
+            "duration": 1137
+          },
+          {
+            "path": ["allUsers", 6, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 376520,
+            "duration": 991
+          },
+          {
+            "path": ["allUsers", 7, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 383815,
+            "duration": 1185
+          },
+          {
+            "path": ["allUsers", 8, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 390604,
+            "duration": 976
+          },
+          {
+            "path": ["allUsers", 9, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 394293,
+            "duration": 3283
+          },
+          {
+            "path": ["allUsers", 10, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 400448,
+            "duration": 4274
+          },
+          {
+            "path": ["allUsers", 11, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 407563,
+            "duration": 985
+          },
+          {
+            "path": ["allUsers", 12, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 413733,
+            "duration": 1133
+          },
+          {
+            "path": ["allUsers", 13, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 421572,
+            "duration": 1059
+          },
+          {
+            "path": ["allUsers", 14, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 427406,
+            "duration": 979
+          },
+          {
+            "path": ["allUsers", 15, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 438790,
+            "duration": 1148
+          },
+          {
+            "path": ["allUsers", 16, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 445726,
+            "duration": 1151
+          },
+          {
+            "path": ["allUsers", 17, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 453006,
+            "duration": 1018
+          },
+          {
+            "path": ["allUsers", 18, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 456909,
+            "duration": 3509
+          },
+          {
+            "path": ["allUsers", 19, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 463075,
+            "duration": 972
+          },
+          {
+            "path": ["allUsers", 20, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 469481,
+            "duration": 1092
+          },
+          {
+            "path": ["allUsers", 21, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 476546,
+            "duration": 997
+          },
+          {
+            "path": ["allUsers", 22, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 482578,
+            "duration": 957
+          },
+          {
+            "path": ["allUsers", 23, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 489940,
+            "duration": 1173
+          },
+          {
+            "path": ["allUsers", 24, "id"],
+            "parentType": "User",
+            "fieldName": "id",
+            "returnType": "ID!",
+            "startOffset": 496000,
+            "duration": 949
           }
         ]
       }
